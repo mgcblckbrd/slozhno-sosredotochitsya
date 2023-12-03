@@ -2,4 +2,121 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  max-inline-size: 1024px;
+  font-family: var(--main-font-family);
+  color: var(--main-text-color);
+  font-weight: 400;
+}
+
+.header {
+  background-image: var(--bg-img);
+  min-block-size: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: var(--default-padding);
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  block-size: 25px;
+  inline-size: 25px;
+  inset-block-start: 20px;
+  inset-inline-end: 20px;
+  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  block-size: 25px;
+  inline-size: 25px;
+  inset-block-end: 20px;
+  inset-inline-start: 20px;
+  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-list {
+  display: flex;
+  gap: 0 10px;
+  justify-content: center;
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  text-transform: lowercase;
+  font-size: inherit;
+  padding: 0 13px;
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-size);
+  color: var(--accent-color);
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid rgba(255, 0, 112, 0.4);
+}
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+}
+
+.header__theme-menu {
+  position: relative;
+}
+
+.rec {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  font-size: var(--main-font-size);
+  color: var(--accent-color);
+}
+
+.rec::after {
+  content: " ";
+  display: inline-block;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 5px 2px var(--accent-color);
+  margin-inline-start: 10px;
+  margin-inline-end: 7px;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+
+.main-heading {
+  color: var(--title-color, #db00ff);
+  text-shadow: 4px 4px 0px var(--accent-color, #ff0070);
+  font-size: 157px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%; 
+  margin-top: 275px;
+  margin-left: -20px;
+}
+
+.header__text-block{
+  color: var(--heading-text-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  line-height: 23.4px;
+  inline-size: 491px;
+  block-size: 71px;
+  margin-inline-start: 493px;
+  margin-block-start: 114px;
+  font-size: 18px;
+  font-style: normal;
 }
