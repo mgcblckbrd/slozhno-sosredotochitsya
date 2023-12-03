@@ -19,7 +19,7 @@
 }
 
 .header::after {
-  content: "";
+  content: '';
   position: absolute;
   block-size: 25px;
   inline-size: 25px;
@@ -30,7 +30,7 @@
 }
 
 .header::before {
-  content: "";
+  content: '';
   position: absolute;
   block-size: 25px;
   inline-size: 25px;
@@ -86,7 +86,7 @@
 }
 
 .rec::after {
-  content: " ";
+  content: ' ';
   display: inline-block;
   background-color: var(--accent-color);
   box-shadow: 0 0 5px 2px var(--accent-color);
@@ -103,12 +103,12 @@
   font-size: 157px;
   font-style: normal;
   font-weight: 700;
-  line-height: 82.5%; 
+  line-height: 82.5%;
   margin-top: 275px;
   margin-left: -20px;
 }
 
-.header__text-block{
+.header__text-block {
   color: var(--heading-text-color);
   background-color: var(--accent-color);
   font-weight: 700;

@@ -8,13 +8,10 @@
   --heading-text-color: #000028;
   --main-text-color: #f1b2ce;
   --title-color: #db00ff;
-  --main-font-family: "IBM Plex Mono";
+  --main-font-family: 'IBM Plex Mono';
   --main-font-size: 18px;
   --default-padding: 20px;
 }
 
 .page.theme_dark {
-
-
 }
-

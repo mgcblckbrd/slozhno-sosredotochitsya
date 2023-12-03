@@ -4,12 +4,10 @@
   переключая тему
 */
 
-
 .page.theme_light {
   --accent-color: #ff8dcb;
   --heading-text-color: #000028;
   --main-text-color: #353430;
-  --title-color: #FFC2E6;
+  --title-color: #ffc2e6;
   --bg-img: url(../images/cover-image-light.png);
 }
-
