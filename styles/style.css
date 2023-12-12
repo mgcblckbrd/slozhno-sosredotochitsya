@@ -17,7 +17,8 @@
 }
 
 h2,
-h3 {
+h3,
+h4 {
   font-size: var(--main-font-size, 18px);
   font-weight: 700;
 }
@@ -96,6 +97,7 @@ h3 {
   right: 0;
   font-size: var(--main-font-size, 18px);
   color: var(--accent-color, #ff0070);
+  text-transform: uppercase;
 }
 
 .rec::after {
