@@ -3,7 +3,9 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root {
+
+
+.page.theme_dark {
   --accent-color: #ff0070;
   --heading-text-color: #000028;
   --main-text-color: #f1b2ce;
@@ -11,7 +13,4 @@
   --main-font-family: 'IBM Plex Mono';
   --main-font-size: 18px;
   --default-padding: 20px;
-}
-
-.page.theme_dark {
 }
