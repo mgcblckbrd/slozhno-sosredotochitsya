@@ -16,55 +16,53 @@
   --btn-color: #ff0070;
 }
 
+.page.theme_dark .header__theme-menu-button {
+  color: #ff0070;
+}
 
+.page.theme_dark .header__theme-menu-button:hover {
+  border: 1px solid rgba(255, 0, 112, 0.4);
+  cursor: pointer;
+}
 
-  .page.theme_dark .header__theme-menu-button {
-color: #ff0070;
-  }
+.page.theme_dark .header__theme-menu-button:focus {
+  outline: none;
+}
 
+.page.theme_dark .header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--accent-color, #ff0070);
+  outline-offset: 2px;
+  cursor: pointer;
+}
 
-  .page.theme_dark  .header__theme-menu-button:hover {
-    border: 1px solid rgba(255, 0, 112, 0.4);
-    cursor: pointer;
-  }
-
-  .page.theme_dark .header__theme-menu-button:focus {
-    outline: none;
-  }
-  
-  .page.theme_dark .header__theme-menu-button:focus-visible {
-    border-bottom: 1px solid var(--accent-color, #ff0070);
-    outline-offset: 2px;
-    cursor: pointer;
-  }
-  
-  .page.theme_dark .header__theme-menu-button_active {
-    border: 1px solid var(--accent-color, #ff0070);
+.page.theme_dark .header__theme-menu-button_active {
+  border: 1px solid var(--accent-color, #ff0070);
   pointer-events: none;
-  }
+}
 
-
-
+.page.theme_dark .rec {
+display: block;
+}
 
 .page.theme_dark .main__title {
   color: var(--accent-color);
 }
 
-.page.theme_dark .decorated-zone::after , .decorated-zone::after {
+.page.theme_dark .decorated-zone::after,
+.decorated-zone::after {
   border-block-start: 1px solid var(--accent-color, #ff0070);
   border-inline-end: 1px solid var(--accent-color, #ff0070);
 }
 
-.page.theme_dark .decorated-zone::before , .decorated-zone::before {
+.page.theme_dark .decorated-zone::before,
+.decorated-zone::before {
   border-block-end: 1px solid var(--accent-color, #ff0070);
   border-inline-start: 1px solid var(--accent-color, #ff0070);
 }
 
 @media (width <= 768px) {
-
   .page.theme_dark .footer-heading {
-color: var(--title-color);
-text-shadow: 4px 4px 0px var(--accent-color, #ff0070);
+    color: var(--title-color);
+    text-shadow: 4px 4px 0px var(--accent-color, #ff0070);
   }
-
 }

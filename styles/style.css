@@ -2,6 +2,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  min-inline-size: 375px;
   max-inline-size: 1024px;
   font-family: var(--main-font-family, 'IBM Plex Mono', monospace);
   color: var(--main-text-color, #f1b2ce);
@@ -15,6 +16,8 @@
   margin: auto;
   line-height: 23.4px;
 }
+
+
 
 h2,
 h3,
@@ -55,10 +58,6 @@ h4 {
   border-inline-start: 1px solid var(--accent-color, #ff0070);
 }
 
-/* .header__theme-menu {
-  color: var(--btn-color, #ff0070);
-} */
-
 .header__theme-menu-list {
   display: flex;
   gap: 0 10px;
@@ -72,7 +71,6 @@ h4 {
   padding: 0 13px;
   font-family: var(--main-font-family, 'IBM Plex Mono', monospace);
   font-size: var(--main-font-size, 18px);
-  /* color: var(--btn-color, #ff0070); */
   cursor: pointer;
 }
 
@@ -126,7 +124,7 @@ h4 {
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
-  margin-block-start: 28vh;
+  margin-top: 275px;
   margin-inline-start: -20px;
 }
 
@@ -342,8 +340,11 @@ h4 {
   }
 
   .section__container {
+    /* max-inline-size: calc(100% - 35%); */
+  }
+
+  .width-container {
     max-inline-size: calc(100% - 35%);
-    gap: 20px;
   }
 
   .second-section--heading {
@@ -352,7 +353,6 @@ h4 {
 
   .second-section__flex {
     flex-direction: column;
-    max-inline-size: 100%;
   }
 
   .second-article {
@@ -365,6 +365,7 @@ h4 {
 }
 
 @media (width <= 650px) {
+
   .main__section {
     flex-direction: column;
   }
@@ -431,25 +432,6 @@ h4 {
     margin-block-end: 5%;
   }
 
-  .main__section {
-    flex-direction: column;
-  }
-
-  .section__container {
-    max-inline-size: 100%;
-  }
-
-  .main {
-    margin-block-start: 30px;
-    gap: 50px;
-  }
-
-  .main__title,
-  .second-section--heading {
-    max-inline-size: 100%;
-    inline-size: 100%;
-  }
-
   .main-heading {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
@@ -474,53 +456,8 @@ h4 {
     inset-inline-start: 10px;
   }
 
-  .header__theme-menu-list {
-    margin-block-start: 65px;
-  }
-
-  .header__title {
-    margin-block-start: 65px;
-    margin-inline-start: 0;
-    font-size: 116px;
-  }
-
   .header__text-block {
-    inline-size: 355px;
     margin-block-start: 58px;
-  }
-
-  .main__section {
-    flex-direction: column;
-  }
-
-  .section__container {
-    max-inline-size: 100%;
-  }
-
-  .main {
-    margin-block-start: 30px;
-    gap: 50px;
-  }
-
-  .main__title,
-  .second-section--heading {
-    max-inline-size: 100%;
-    inline-size: 100%;
-  }
-
-  .main-heading {
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  }
-
-  .pictures {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-block-start: 10px;
-  }
-
-  .picture {
-    margin-block-start: 0;
   }
 
   .footer-heading {
@@ -529,6 +466,7 @@ h4 {
 }
 
 @media (height >= 1024px) {
+
   .main-heading {
     margin-block-start: 30vh;
   }
