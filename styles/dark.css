@@ -61,6 +61,7 @@ display: block;
 }
 
 @media (width <= 768px) {
+  
   .page.theme_dark .footer-heading {
     color: var(--title-color);
     text-shadow: 4px 4px 0px var(--accent-color, #ff0070);
